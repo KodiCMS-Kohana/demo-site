@@ -1,0 +1,91 @@
+/*
+Theme created for use with Sequence.js (http://www.sequencejs.com/)
+
+Theme: Sliding Horizontal Parallax
+Version: 1.0
+Theme Author: Ian Lunn @IanLunn
+Author URL: http://www.ianlunn.co.uk/
+Theme URL: http://www.sequencejs.com/themes/sliding-horizontal-parallax/
+
+This is a FREE theme and is available under a MIT License:
+http://www.opensource.org/licenses/mit-license.php
+
+Sequence.js and its dependencies are (c) Ian Lunn Design 2012 unless otherwise stated.
+
+/* prefix declarations */
+/* THEME STYLES */
+
+/* Inner Slider */
+.sequence-inner,
+.sequence-inner h2,
+.sequence-inner .info p  {
+	background: none;
+}
+/* End Inner Slider */
+
+.sequence-inner {
+	background: #fff;
+	background-image: url(../../../images/more/bg2.jpg);
+	background-size: cover;
+	-webkit-box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+#sequence {
+	color: #fff;
+	max-width: 2560px;
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	/* prevent graphical glitches in WebKit browsers when using transitions */
+}
+
+#sequence {
+	min-height: 200px;
+	margin: 0 auto;
+	position: relative;
+}
+#sequence .info {
+	line-height: 1.4em;
+	z-index: 10;
+	vertical-align: middle;
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+}
+#sequence h2 {
+	color:#fff;
+	font-size: 3em;
+	line-height: 1.2em;
+	padding:5px 8px;
+	display:inline-block;
+	box-shadow: none;
+	font-weight: 200;
+	background:rgba(114, 192, 44, 0.8);
+}
+#sequence .info p {
+	color: #fff;
+	font-size: 20px;
+	padding:5px 10px;
+	background:rgba(114, 192, 44, 0.8);
+}
+
+.demo-slider .info  {
+	margin-top: 100px;
+}
+
+@media (max-width: 991px) {
+	.demo-slider .info  {
+		margin-top: 10px;
+	}
+}
+@media (max-width: 767px) {
+	.demo-slider .info  {
+		margin-top: 0;
+		text-align: center;
+	}
+}
